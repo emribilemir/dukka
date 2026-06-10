@@ -211,15 +211,23 @@ a {
   -webkit-backdrop-filter: blur(34px) saturate(1.22);
 }
 
-.invitation-panel::before,
-.invitation-panel::after {
-  content: "";
+.panel-glow-mask {
   position: absolute;
-  inset: auto;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  border-radius: inherit;
   pointer-events: none;
 }
 
-.invitation-panel::before {
+.panel-glow-mask::before,
+.panel-glow-mask::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+}
+
+.panel-glow-mask::before {
   width: 170px;
   height: 170px;
   top: -74px;
@@ -229,7 +237,7 @@ a {
   filter: blur(8px);
 }
 
-.invitation-panel::after {
+.panel-glow-mask::after {
   width: 210px;
   height: 210px;
   right: -84px;
@@ -237,6 +245,14 @@ a {
   border-radius: 999px;
   background: rgba(125, 226, 195, 0.28);
   filter: blur(9px);
+}
+
+.micro-badge,
+.hero-title,
+.hero-copy,
+.choice-row {
+  position: relative;
+  z-index: 1;
 }
 
 .micro-badge {

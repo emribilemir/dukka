@@ -281,6 +281,7 @@ function DukkalamaApp() {
           transition={{ duration: 0.5 }}
           aria-labelledby="dukkalama-title"
         >
+          <div className="panel-glow-mask" aria-hidden="true" />
           <div className="micro-badge">
             <span>soft chaos mode</span>
             <strong>ON</strong>
