@@ -1,0 +1,28 @@
+{
+  "name": "stitch-sevimli-dukkalama-sitesi",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1"
+  },
+  "dependencies": {
+    "@gsap/react": "^2.1.2",
+    "@tsparticles/react": "^4.1.3",
+    "@tsparticles/slim": "^4.1.3",
+    "canvas-confetti": "^1.9.3",
+    "fireworks-js": "^2.10.8",
+    "gsap": "^3.12.5",
+    "motion": "^12.0.0",
+    "party-js": "^2.2.0",
+    "react": "^19.0.0",
+    "react-confetti": "^6.1.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^6.0.0"
+  }
+}

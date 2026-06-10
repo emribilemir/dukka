@@ -1,0 +1,6 @@
+node_modules
+dist
+stitch_sevimli_dukkalama_sitesi
+.DS_Store
+npm-debug.log*
+*.local
